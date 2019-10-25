@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fixtures matrix-2x3 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      false,
+      "4",
+    ],
+    Array [
+      false,
+      "6",
+    ],
+  ],
+  Immutable.List [
+    Array [
+      false,
+      "10",
+    ],
+    Array [
+      false,
+      "12",
+    ],
+    Array [
+      false,
+      "14",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-colspan-1 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "1",
+    ],
+    Array [
+      true,
+      "1",
+    ],
+    Array [
+      false,
+      "3",
+    ],
+  ],
+  Immutable.List [
+    Array [
+      false,
+      "7",
+    ],
+    Array [
+      false,
+      "9",
+    ],
+    Array [
+      false,
+      "11",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-colspan-2 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+  ],
+  Immutable.List [
+    Array [
+      false,
+      "6",
+    ],
+    Array [
+      false,
+      "8",
+    ],
+    Array [
+      false,
+      "10",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-colspan-3 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+  ],
+  Immutable.List [
+    Array [
+      false,
+      "6",
+    ],
+    Array [
+      false,
+      "8",
+    ],
+    Array [
+      false,
+      "10",
+    ],
+    Array [
+      false,
+      "17",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-colspan-4 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      false,
+      "5",
+    ],
+    Array [
+      true,
+      "5",
+    ],
+    Array [
+      true,
+      "5",
+    ],
+    Array [
+      false,
+      "26",
+    ],
+  ],
+  Immutable.List [
+    Array [
+      false,
+      "9",
+    ],
+    Array [
+      false,
+      "11",
+    ],
+    Array [
+      false,
+      "13",
+    ],
+    Array [
+      false,
+      "16",
+    ],
+    Array [
+      false,
+      "19",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-multi-colspan 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      false,
+      "5",
+    ],
+    Array [
+      true,
+      "5",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-rowspan 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      false,
+      "4",
+    ],
+  ],
+  Immutable.List [
+    Array [
+      true,
+      "2",
+    ],
+    Array [
+      false,
+      "already_there",
+    ],
+  ],
+]
+`;
+
+exports[`fixtures matrix-simple-1x1 1`] = `
+Immutable.List [
+  Immutable.List [
+    Array [
+      false,
+      "2",
+    ],
+    Array [
+      false,
+      "4",
+    ],
+  ],
+]
+`;

@@ -1,0 +1,110 @@
+{
+	"name": "@eliumhq/slate-tables",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./dist/index.js",
+	"files": [
+		"dist",
+		"lib",
+		"*.md"
+	],
+	"peerDependencies": {
+		"slate": "^0.47.8",
+		"slate-react": "^0.22.8"
+	},
+	"dependencies": {
+		"core-js": "3",
+		"is-hotkey": "^0.1.6"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.6.4",
+		"@babel/core": "^7.5.5",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@babel/preset-react": "^7.6.3",
+		"babel-eslint": "^10.0.2",
+		"babel-jest": "^24.9.0",
+		"eslint": "^5.16.0",
+		"eslint-config-prettier": "^6.2.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-config-standard-react": "^7.0.2",
+		"eslint-plugin-babel": "^5.3.0",
+		"eslint-plugin-import": "^2.17.2",
+		"eslint-plugin-node": "^9.0.1",
+		"eslint-plugin-prettier": "^3.1.0",
+		"eslint-plugin-promise": "^4.1.1",
+		"eslint-plugin-react": "^7.13.0",
+		"eslint-plugin-react-hooks": "^1.6.0",
+		"eslint-plugin-standard": "^4.0.0",
+		"immutable": "^4.0.0-rc.12",
+		"jest": "^24.9.0",
+		"jest-diff": "^24.9.0",
+		"jest-watch-typeahead": "^0.4.0",
+		"lodash.isequal": "^4.5.0",
+		"parcel-bundler": "^1.12.3",
+		"prettier": "^1.18.2",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
+		"react-test-renderer": "^16.11.0",
+		"slate": "^0.47.8",
+		"slate-hyperscript": "^0.13.8",
+		"slate-react": "^0.22.8"
+	},
+	"scripts": {
+		"test": "NODE_ENV=test jest --roots --roots ./tests",
+		"start": "parcel examples/index.html",
+		"build": "rm -rf ./dist; NODE_ENV=production babel lib --out-dir dist",
+		"prepack": "npm run build"
+	},
+	"jest": {
+		"notify": false,
+		"globals": {
+			"__DEV__": false,
+			"__PROD__": true,
+			"__TEST__": true
+		},
+		"setupFilesAfterEnv": [
+			"<rootDir>/jest.setup.js"
+		],
+		"testPathIgnorePatterns": [
+			"/node_modules/",
+			"/fixtures/"
+		],
+		"moduleFileExtensions": [
+			"js",
+			"jsx",
+			"json"
+		],
+		"moduleDirectories": [
+			"node_modules",
+			"<rootDir>"
+		],
+		"roots": [
+			"<rootDir>"
+		],
+		"testMatch": [
+			"<rootDir>/tests/**/*.js",
+			"<rootDir>/tests/**/*.jsx"
+		],
+		"transform": {
+			"^.+\\.jsx?$": "babel-jest"
+		},
+		"watchPlugins": [
+			"jest-watch-typeahead/filename",
+			"jest-watch-typeahead/testname"
+		]
+	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env"
+			]
+		],
+		"plugins": [
+			"@babel/plugin-proposal-class-properties"
+		]
+	},
+	"repository": "git@gitlab.com:elium/product/slate-tables.git",
+	"author": "Quentin Gérome <q.gerome@whatever-company.com>",
+	"license": "MIT"
+}

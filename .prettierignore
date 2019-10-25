@@ -1,0 +1,10 @@
+CHANGELOG.md
+codemods/**/__testfixtures__/*.js
+config/schema.graphql
+coverage/**
+dist/**
+node_modules/**
+package.json
+storybook_static/**
+styleguide_static/**
+**/__generated__/*.graphql.js
