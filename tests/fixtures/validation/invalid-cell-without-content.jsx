@@ -24,9 +24,7 @@ export const output = (
 			<table>
 				<tr>
 					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<text />
 					</td>
 				</tr>
 			</table>

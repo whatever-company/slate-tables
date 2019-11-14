@@ -50,9 +50,7 @@ export const output = (
 						<paragraph>First</paragraph>
 					</td>
 					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<text />
 					</td>
 					<td>
 						<paragraph>
