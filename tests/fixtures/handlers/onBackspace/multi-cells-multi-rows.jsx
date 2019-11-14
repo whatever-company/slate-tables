@@ -80,26 +80,18 @@ export const output = (
 				</tr>
 				<tr>
 					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<text />
 					</td>
 					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<text />
 					</td>
 					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<text />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<text />
 					</td>
 					<td>
 						<paragraph>
