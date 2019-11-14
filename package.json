@@ -1,6 +1,6 @@
 {
 	"name": "@eliumhq/slate-tables",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "./dist/index.js",
 	"files": [
@@ -48,11 +48,13 @@
 		"react-test-renderer": "^16.11.0",
 		"slate": "^0.47.8",
 		"slate-hyperscript": "^0.13.8",
-		"slate-react": "^0.22.8"
+		"slate-react": "^0.22.8",
+		"standard-version": "^6.0.1"
 	},
 	"scripts": {
 		"test": "NODE_ENV=test jest --roots --roots ./tests",
 		"start": "parcel examples/index.html",
+		"release": "standard-version",
 		"build": "rm -rf ./dist; NODE_ENV=production babel lib --out-dir dist",
 		"prepack": "npm run build"
 	},
