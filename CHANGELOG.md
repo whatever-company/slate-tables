@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://gitlab.com/elium/product/slate-tables/compare/v1.0.3...v1.0.4) (2019-11-15)
+
+
+### Bug Fixes
+
+* create new columns array at every set ([05d6fc5](https://gitlab.com/elium/product/slate-tables/commit/05d6fc5))
+
+
+
 ### [1.0.3](https://gitlab.com/elium/product/slate-tables/compare/v1.0.2...v1.0.3) (2019-11-15)
 
 
