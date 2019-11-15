@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://gitlab.com/elium/product/slate-tables/compare/v1.0.4...v1.0.5) (2019-11-15)
+
+
+### Bug Fixes
+
+* do not immutablify the properties when calling setTableProperties ([1bc010f](https://gitlab.com/elium/product/slate-tables/commit/1bc010f))
+
+
+
 ### [1.0.4](https://gitlab.com/elium/product/slate-tables/compare/v1.0.3...v1.0.4) (2019-11-15)
 
 
