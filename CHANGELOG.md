@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://gitlab.com/elium/product/slate-tables/compare/v1.0.5...v1.0.6) (2019-11-15)
+
+
+### Bug Fixes
+
+* accept row to only have a text ([e5587f3](https://gitlab.com/elium/product/slate-tables/commit/e5587f3))
+
+
+
 ### [1.0.5](https://gitlab.com/elium/product/slate-tables/compare/v1.0.4...v1.0.5) (2019-11-15)
 
 
