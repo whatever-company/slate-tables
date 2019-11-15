@@ -2,6 +2,10 @@
 
 import { h } from 'testutils/hyperscript'
 
+export const options = {
+	saveColumns: true
+}
+
 export default editor => {
 	editor.deleteColumn()
 }
@@ -9,7 +13,7 @@ export default editor => {
 export const value = (
 	<value>
 		<document>
-			<table>
+			<table columns={[{ width: 10 }, { width: 20 }, { width: 30 }]}>
 				<tr>
 					<td>
 						<paragraph>Cell 1,1</paragraph>
@@ -63,7 +67,7 @@ export const value = (
 export const output = (
 	<value>
 		<document>
-			<table>
+			<table columns={[{ width: 10 }, { width: 30 }]}>
 				<tr>
 					<td>
 						<paragraph>Cell 1,1</paragraph>

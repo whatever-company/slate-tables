@@ -44,6 +44,11 @@ class TableEditor extends React.Component {
 			case 'table':
 				return (
 					<table {...props.attributes}>
+						<colgroup contentEditable={false}>
+							{props.node.data.get('columns', []).map((col, index) => (
+								<col key={index} width={col.width} />
+							))}
+						</colgroup>
 						<tbody>{props.children}</tbody>
 					</table>
 				)
