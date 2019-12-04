@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.8](https://gitlab.com/elium/product/slate-tables/compare/v1.0.7...v1.0.8) (2019-12-04)
+
+
+### Bug Fixes
+
+* **IOS:** do not preventDefault on backspace in a table cell on IOS ([fc7e538](https://gitlab.com/elium/product/slate-tables/commit/fc7e538))
+
+
+
 ### [1.0.7](https://gitlab.com/elium/product/slate-tables/compare/v1.0.6...v1.0.7) (2019-11-15)
 
 
