@@ -4,12 +4,6 @@ import { Editor } from 'slate-react'
 import value from './value'
 import TablePlugin from '../lib'
 
-const preventDefault = fn => e => {
-	e.preventDefault()
-	e.stopPropagation()
-	fn(e)
-}
-
 const Button = ({ onClick, children }) => {
 	const handleClick = event => {
 		event.preventDefault()
