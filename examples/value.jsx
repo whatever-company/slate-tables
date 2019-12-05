@@ -8,13 +8,16 @@ export default (
 			<table>
 				<tr>
 					<td colspan={2}>
-						<paragraph>
-							<text>Cell 1,1</text>
-							<cursor />
-						</paragraph>
+						<ul>
+							<li>List item 1</li>
+							<li>
+								List item 2<cursor />
+							</li>
+						</ul>
 					</td>
 					<td>
-						<paragraph>Cell 1,3</paragraph>
+						<paragraph>Cell 1,3 TOP</paragraph>
+						<paragraph>Cell 1,3 BELOW</paragraph>
 					</td>
 				</tr>
 				<tr>

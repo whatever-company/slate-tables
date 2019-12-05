@@ -5,7 +5,9 @@ export const h = createHyperscript({
 		table: 'table',
 		tr: 'table-row',
 		td: 'table-cell',
-		paragraph: 'paragraph'
+		paragraph: 'paragraph',
+		li: 'li',
+		ul: 'ul'
 	}
 })
 

@@ -60,6 +60,10 @@ class TableEditor extends React.Component {
 				)
 			case 'paragraph':
 				return <p {...props.attributes}>{props.children}</p>
+			case 'ul':
+				return <ul {...props.attributes}>{props.children}</ul>
+			case 'li':
+				return <li {...props.attrivutes}>{props.children}</li>
 		}
 		return next()
 	}
