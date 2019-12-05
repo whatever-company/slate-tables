@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.9](https://gitlab.com/elium/product/slate-tables/compare/v1.0.8...v1.0.9) (2019-12-05)
+
+
+### Bug Fixes
+
+* better navigation in cell with more than a content node ([e46ac3b](https://gitlab.com/elium/product/slate-tables/commit/e46ac3b))
+
+
+
 ### [1.0.8](https://gitlab.com/elium/product/slate-tables/compare/v1.0.7...v1.0.8) (2019-12-04)
 
 
