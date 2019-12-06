@@ -23,7 +23,7 @@ const Button = ({ onClick, children }) => {
 class TableEditor extends React.Component {
 	constructor(props) {
 		super(props)
-		this.plugins = [TablePlugin()]
+		this.plugins = [TablePlugin({ enterCreatesRow: false })]
 		this.state = {
 			value
 		}

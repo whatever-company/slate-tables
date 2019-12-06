@@ -2,6 +2,10 @@
 
 import { h } from 'testutils/hyperscript'
 
+export const options = {
+	enterCreatesRow: true
+}
+
 export default editor => {
 	editor.run('onKeyDown', { preventDefault() {}, key: 'Enter' })
 }

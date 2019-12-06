@@ -3,7 +3,7 @@
 import { h } from 'testutils/hyperscript'
 
 export const options = {
-	enterCreatesRow: true
+	enterCreatesRow: false
 }
 
 export default editor => {
@@ -20,10 +20,8 @@ export const value = (
 					</td>
 					<td>
 						<paragraph>
-							<text>
-								<cursor />
-								0,1
-							</text>
+							0,1
+							<cursor />
 						</paragraph>
 					</td>
 				</tr>
@@ -47,19 +45,8 @@ export const output = (
 						<paragraph>
 							<text>0,1</text>
 						</paragraph>
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<paragraph>
-							<text>
-								<cursor />
-							</text>
-						</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text />
+							<cursor />
 						</paragraph>
 					</td>
 				</tr>
