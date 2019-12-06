@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.10](https://gitlab.com/elium/product/slate-tables/compare/v1.0.9...v1.0.10) (2019-12-06)
+
+
+### Features
+
+* **Tables:** Tab creates a row when on last cell; shift+tab creates a row when on first cell ([f5d3fc0](https://gitlab.com/elium/product/slate-tables/commit/f5d3fc0))
+
+
+
 ### [1.0.9](https://gitlab.com/elium/product/slate-tables/compare/v1.0.8...v1.0.9) (2019-12-05)
 
 
