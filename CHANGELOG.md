@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.11](https://gitlab.com/elium/product/slate-tables/compare/v1.0.10...v1.0.11) (2020-01-02)
+
+
+### Bug Fixes
+
+* Don't erase previous node data. ([e210b62](https://gitlab.com/elium/product/slate-tables/commit/e210b62))
+
+
+
 ### [1.0.10](https://gitlab.com/elium/product/slate-tables/compare/v1.0.9...v1.0.10) (2019-12-06)
 
 
