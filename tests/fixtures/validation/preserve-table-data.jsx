@@ -2,31 +2,32 @@
 
 import { h } from 'testutils/hyperscript'
 
-export default editor => {
-	editor.setTableProperties({ example: true })
-}
+export default () => {}
 
 export const value = (
 	<value>
 		<document>
-			<table before="already here">
+			<table before="already here" also="here">
 				<tr>
 					<td>
 						<paragraph>
-							Cell 1,1
-							<cursor />
+							<text />
 						</paragraph>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<paragraph>Cell 2,1</paragraph>
+						<paragraph>
+							<text />
+						</paragraph>
+					</td>
+					<td>
+						<paragraph>
+							<text />
+						</paragraph>
 					</td>
 				</tr>
 			</table>
-			<paragraph key="not-table">
-				<text />
-			</paragraph>
 		</document>
 	</value>
 )
@@ -34,24 +35,22 @@ export const value = (
 export const output = (
 	<value>
 		<document>
-			<table before="already here" example>
+			<table before="already here" also="here">
 				<tr>
 					<td>
 						<paragraph>
-							Cell 1,1
-							<cursor />
+							<text />
 						</paragraph>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<paragraph>Cell 2,1</paragraph>
+						<paragraph>
+							<text />
+						</paragraph>
 					</td>
 				</tr>
 			</table>
-			<paragraph>
-				<text />
-			</paragraph>
 		</document>
 	</value>
 )
