@@ -2,7 +2,7 @@
 
 A Slate plugin to handle table edition.
 
-Demo: [gitbookio.github.io/slate-tables/](https://gitbookio.github.io/slate-tables/)
+Demo: [https://whatever-company.github.io/slate-tables/](https://whatever-company.github.io/slate-tables/)
 
 ## Install
 

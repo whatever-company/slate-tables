@@ -57,6 +57,7 @@
 	"scripts": {
 		"test": "NODE_ENV=test jest --roots --roots ./tests",
 		"start": "parcel examples/index.html",
+		"build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
 		"release": "standard-version",
 		"build": "rm -rf ./dist; NODE_ENV=production babel lib --out-dir dist",
 		"prepack": "npm run build"
