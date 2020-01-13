@@ -4,6 +4,8 @@ A Slate plugin to handle table edition.
 
 Demo: [https://whatever-company.github.io/slate-tables/](whatever-company.github.io/slate-tables)
 
+![Build Status](https://github.com/whatever-company/slate-tables/workflows/CI/badge.svg)
+
 ## Install
 
 ```
