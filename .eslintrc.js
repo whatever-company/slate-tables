@@ -37,6 +37,7 @@ module.exports = {
 	],
 	rules: {
 		'import/no-duplicates': 0,
+		'react/jsx-fragments': 0,
 		'no-duplicate-imports': 'error',
 		'prettier/prettier': 'error',
 		'react/prop-types': 'off',
