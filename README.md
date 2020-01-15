@@ -9,7 +9,7 @@ Demo: [https://whatever-company.github.io/slate-tables/](https://whatever-compan
 ## Install
 
 ```
-npm install slate-tables
+npm install @eliumhq/slate-tables
 ```
 
 ## Features
@@ -35,7 +35,7 @@ Nothing is done to support copy/paste in this plugin. You have to implement it i
 ## Simple Usage
 
 ```js
-import TablePlugin from 'slate-tables'
+import TablePlugin from '@eliumhq/slate-tables'
 
 const tablePlugin = TablePlugin({
 	saveColumns: false,
