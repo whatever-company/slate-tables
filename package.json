@@ -1,7 +1,7 @@
 {
 	"name": "@eliumhq/slate-tables",
 	"version": "1.0.12",
-	"description": "",
+	"description": "A Slate plugin to handle table edition",
 	"main": "./dist/index.js",
 	"files": [
 		"dist",
@@ -110,7 +110,7 @@
 			"@babel/plugin-proposal-class-properties"
 		]
 	},
-	"repository": "git@gitlab.com:elium/product/slate-tables.git",
-	"author": "Quentin Gérome <q.gerome@whatever-company.com>",
+	"repository": "git@github.com:whatever-company/slate-tables.git",
+	"author": "Elium <info@elium.com>",
 	"license": "MIT"
 }
