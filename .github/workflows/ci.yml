@@ -1,16 +1,23 @@
 name: CI
 on: [push]
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
+        name: Use Node.js 12.x
         with:
           node-version: '12.x'
+      - uses: actions/cache@v1
+        name: Restore node_modules cache
+        id: node_modules
+        with:
+          path: node_modules
+          key: ${{runner.os}}-node_modules-${{ hashFiles('**/yarn.lock') }}
       - uses: borales/actions-yarn@v2.0.0
         name: Install dependencies
+        if: steps.node_modules.outputs.cache-hit != 'true'
         with:
           cmd: install # will run `yarn install` command
       - uses: borales/actions-yarn@v2.0.0
