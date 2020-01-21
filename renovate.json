@@ -1,5 +1,24 @@
 {
-  "extends": [
-    "config:base"
-  ]
+	"extends": ["github>whatever-company/renovate-config"],
+	"ignoreDeps": ["slate", "slate-hyperscript", "slate-react", "slate-plain-serializer"],
+	"automerge": true,
+	"prConcurrentLimit": 3,
+	"packageRules": [
+		{
+			"packagePatterns": ["^@babel"],
+			"groupName": "Babel packages"
+		},
+		{
+			"packagePatterns": ["^jest"],
+			"groupName": "Jest packages"
+		},
+		{
+			"packageNames": ["react", "react-dom", "react-test-renderer"],
+			"groupName": "React"
+		},
+		{
+			"packageNames": ["debug"],
+			"allowedVersions": "<4"
+		}
+	]
 }
