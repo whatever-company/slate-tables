@@ -1,5 +1,5 @@
 {
-	"name": "@eliumhq/slate-tables",
+	"name": "@whatever-company/slate-tables",
 	"version": "1.0.12",
 	"description": "A Slate plugin to handle table edition",
 	"main": "./dist/index.js",
