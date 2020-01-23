@@ -8,7 +8,7 @@ Demo: [https://whatever-company.github.io/slate-tables/](https://whatever-compan
 
 ## Install
 
-```
+```bash
 $ npm login --registry=https://npm.pkg.github.com --scope=@whatever-company
 > Username: USERNAME
 > Password: TOKEN (from your github settings)
