@@ -15,14 +15,10 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.os}}-node_modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: borales/actions-yarn@v2.0.0
+      - run: yarn install --frozen-lockfile
         name: Install dependencies
         if: steps.node_modules.outputs.cache-hit != 'true'
-        with:
-          cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.0.0
+      - run: yarn test
         name: Run tests
-        with:
-          cmd: test # will run `yarn test` command
         env:
           CI: true
