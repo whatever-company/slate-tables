@@ -1,0 +1,29 @@
+name: Publish
+on:
+  push:
+    tags:
+      - /^v\d+\.\d+\.\d+/
+jobs:
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        name: Use Node.js 12.x
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+          node-version: '12.x'
+      - uses: actions/cache@v1
+        name: Restore node_modules cache
+        id: node_modules
+        with:
+          path: node_modules
+          key: ${{runner.os}}-node_modules-${{ hashFiles('**/yarn.lock') }}
+      - run: yarn install --frozen-lockfile
+        name: Install dependencies
+        if: steps.node_modules.outputs.cache-hit != 'true'
+      - run: npm publish
+        name: Publish package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
