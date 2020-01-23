@@ -9,7 +9,11 @@ Demo: [https://whatever-company.github.io/slate-tables/](https://whatever-compan
 ## Install
 
 ```
-npm install @eliumhq/slate-tables
+$ npm login --registry=https://npm.pkg.github.com --scope=@whatever-company
+> Username: USERNAME
+> Password: TOKEN (from your github settings)
+> Email: PUBLIC-EMAIL-ADDRESS
+$ npm install @whatever-company/slate-tables
 ```
 
 ## Features
