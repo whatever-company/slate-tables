@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/whatever-company/slate-tables/compare/v1.0.12...v1.1.0) (2020-01-23)
+
+
+### Bug Fixes
+
+* **Readme:** correct package name ([52ee165](https://github.com/whatever-company/slate-tables/commit/52ee165334db741a22ef56a12899a53d689d98ee))
+
 ### [1.0.12](https://gitlab.com/elium/product/slate-tables/compare/v1.0.11...v1.0.12) (2020-01-02)
 
 
