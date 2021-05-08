@@ -51,7 +51,7 @@
 		"slate": "^0.47.8",
 		"slate-hyperscript": "^0.13.8",
 		"slate-react": "npm:druide-slate-react",
-		"standard-version": "7.1.0"
+		"standard-version": "8.0.1"
 	},
 	"scripts": {
 		"test": "NODE_ENV=test jest --roots --roots ./tests",
