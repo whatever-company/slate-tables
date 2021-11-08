@@ -1,6 +1,6 @@
 {
 	"name": "@whatever-company/slate-tables",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "A Slate plugin to handle table edition",
 	"main": "./dist/index.js",
 	"files": [

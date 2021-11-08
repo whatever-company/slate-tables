@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/whatever-company/slate-tables/compare/v1.1.1...v1.1.2) (2021-11-08)
+
+
+### Bug Fixes
+
+* **rowspan:** Delete row instead of last cell. ([4f4bac4](https://github.com/whatever-company/slate-tables/commit/4f4bac4bc7ea07aefefa0858b37e0d8eb7f35862))
+
 ### [1.1.1](https://github.com/whatever-company/slate-tables/compare/v1.1.0...v1.1.1) (2020-01-30)
 
 ## [1.1.0](https://github.com/whatever-company/slate-tables/compare/v1.0.12...v1.1.0) (2020-01-23)
