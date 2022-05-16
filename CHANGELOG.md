@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/whatever-company/slate-tables/compare/v1.1.2...v1.1.3) (2022-05-16)
+
+
+### Bug Fixes
+
+* **normalize:** missing col after rowspan is properly normalized ([70c5fa8](https://github.com/whatever-company/slate-tables/commit/70c5fa8bc5e9135cf35b0f24946df66a00e992cb))
+
 ### [1.1.2](https://github.com/whatever-company/slate-tables/compare/v1.1.1...v1.1.2) (2021-11-08)
 
 
