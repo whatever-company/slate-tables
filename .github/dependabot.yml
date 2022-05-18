@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "07:00"
+      timezone: "Europe/Brussels"
+    open-pull-requests-limit: 10
+    rebase-strategy: "disabled"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "07:00"
+      timezone: "Europe/Brussels"
+    open-pull-requests-limit: 10
+    rebase-strategy: "disabled"
+    ignore:
+      - dependency-name: "slate"
+      - dependency-name: "slate-hyperscript"
+      - dependency-name: "slate-react"
