@@ -8,7 +8,7 @@ module.exports = {
 		'prettier/standard'
 	],
 	plugins: ['babel', 'prettier', 'standard', 'react', 'react-hooks'],
-	parser: 'babel-eslint',
+	parser: '@babel/eslint-parser',
 	env: {
 		es6: true,
 		browser: true
