@@ -14,7 +14,7 @@ jobs:
         name: Use Node.js 12.x
         with:
           node-version: '12.x'
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3
         name: Restore node_modules cache
         id: node_modules
         with:

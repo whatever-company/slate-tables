@@ -13,7 +13,7 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
           node-version: '12.x'
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3
         name: Restore node_modules cache
         id: node_modules
         with:
