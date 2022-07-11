@@ -46,7 +46,7 @@
 		"parcel-bundler": "1.12.4",
 		"prettier": "1.19.1",
 		"react": "16.14.0",
-		"react-dom": "16.13.1",
+		"react-dom": "16.14.0",
 		"react-test-renderer": "16.13.1",
 		"slate": "^0.47.8",
 		"slate-hyperscript": "^0.13.8",
