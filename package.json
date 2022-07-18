@@ -27,7 +27,7 @@
 		"@babel/eslint-parser": "7.18.2",
 		"babel-jest": "28.1.3",
 		"eslint": "8.20.0",
-		"eslint-config-prettier": "6.15.0",
+		"eslint-config-prettier": "8.5.0",
 		"eslint-config-standard": "15.0.1",
 		"eslint-config-standard-react": "10.0.0",
 		"eslint-plugin-babel": "5.3.1",
