@@ -15,7 +15,7 @@
 		"slate-react": "^0.22.8"
 	},
 	"dependencies": {
-		"core-js": "3.25.3",
+		"core-js": "3.25.5",
 		"is-hotkey": "0.1.6"
 	},
 	"devDependencies": {
@@ -26,7 +26,7 @@
 		"@babel/preset-react": "7.18.6",
 		"@babel/eslint-parser": "7.19.1",
 		"babel-jest": "29.0.1",
-		"eslint": "8.24.0",
+		"eslint": "8.25.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-config-standard": "15.0.1",
 		"eslint-config-standard-react": "10.0.0",
@@ -35,7 +35,7 @@
 		"eslint-plugin-node": "11.1.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-promise": "6.0.1",
-		"eslint-plugin-react": "7.31.6",
+		"eslint-plugin-react": "7.31.9",
 		"eslint-plugin-react-hooks": "4.6.0",
 		"eslint-plugin-standard": "5.0.0",
 		"immutable": "4.0.0-rc.12",
