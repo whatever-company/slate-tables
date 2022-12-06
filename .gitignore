@@ -17,3 +17,4 @@ styleguide_static/
 config/schema.json
 graphql.config.json
 junit.xml
+.parcel-cache
