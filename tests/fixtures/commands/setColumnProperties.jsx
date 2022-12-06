@@ -1,3 +1,4 @@
+/** @jsxRuntime classic @jsx h */
 /** @jsx h */
 
 import { h } from 'testutils/hyperscript'
@@ -6,7 +7,7 @@ export const options = {
 	saveColumns: true
 }
 
-export default editor => {
+export default (editor) => {
 	editor.setColumnProperties({ example: true })
 	editor.setColumnPropertiesAtIndex('table', 1, { second: true })
 }
@@ -47,7 +48,12 @@ export const value = (
 export const output = (
 	<value>
 		<document>
-			<table columns={[{ witdh: null, example: true }, { witdh: null, second: true }]}>
+			<table
+				columns={[
+					{ witdh: null, example: true },
+					{ witdh: null, second: true }
+				]}
+			>
 				<tr>
 					<td>
 						<paragraph>

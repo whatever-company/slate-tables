@@ -1,8 +1,9 @@
+/** @jsxRuntime classic @jsx h */
 /** @jsx h */
 
 import { h } from 'testutils/hyperscript'
 
-export default editor => {
+export default (editor) => {
 	expect(editor.getColumnPropertiesAtKey('td1.1')).toEqual({ width: 30, firstColumn: true })
 	expect(editor.getColumnPropertiesAtKey('td2.1')).toEqual({ width: 30, firstColumn: true })
 	expect(editor.getColumnPropertiesAtKey('td5.1')).toEqual({ width: 30, firstColumn: true })
