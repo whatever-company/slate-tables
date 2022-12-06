@@ -1,8 +1,9 @@
+/** @jsxRuntime classic @jsx h */
 /** @jsx h */
 
 import { h } from 'testutils/hyperscript'
 
-export default editor => {
+export default (editor) => {
 	expect(editor.canIncreaseRowspanAtKey('td1.1')).toBe(true)
 	expect(editor.canIncreaseRowspanAtKey('td1.2')).toBe(true)
 

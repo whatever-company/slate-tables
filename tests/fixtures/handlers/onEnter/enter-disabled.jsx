@@ -1,3 +1,4 @@
+/** @jsxRuntime classic @jsx h */
 /** @jsx h */
 
 import { h } from 'testutils/hyperscript'
@@ -6,7 +7,7 @@ export const options = {
 	enterCreatesRow: false
 }
 
-export default editor => {
+export default (editor) => {
 	editor.run('onKeyDown', { preventDefault() {}, key: 'Enter' })
 }
 
