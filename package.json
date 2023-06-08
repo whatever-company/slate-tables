@@ -24,7 +24,7 @@
 		"@babel/eslint-parser": "7.21.8",
 		"@babel/preset-env": "7.22.4",
 		"@babel/preset-react": "7.22.3",
-		"babel-jest": "29.2.1",
+		"babel-jest": "29.5.0",
 		"eslint": "8.31.0",
 		"eslint-config-prettier": "8.6.0",
 		"eslint-config-standard": "15.0.1",
