@@ -43,7 +43,7 @@
 		"jest-watch-typeahead": "2.2.2",
 		"lodash.isequal": "4.5.0",
 		"parcel-bundler": "1.12.5",
-		"prettier": "2.8.8",
+		"prettier": "3.0.0",
 		"react": "16.14.0",
 		"react-dom": "16.14.0",
 		"react-test-renderer": "16.13.1",
