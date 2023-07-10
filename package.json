@@ -15,7 +15,7 @@
 		"slate-react": "^0.22.8"
 	},
 	"dependencies": {
-		"core-js": "3.29.1",
+		"core-js": "3.31.1",
 		"is-hotkey": "0.1.6"
 	},
 	"devDependencies": {
