@@ -1,6 +1,6 @@
 {
 	"name": "@whatever-company/slate-tables",
-	"version": "1.1.6",
+	"version": "1.2.0",
 	"description": "A Slate plugin to handle table edition",
 	"main": "./dist/index.js",
 	"files": [
@@ -44,7 +44,7 @@
 		"build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
 		"release": "standard-version",
 		"build": "rm -rf ./dist; NODE_ENV=production babel lib --out-dir dist",
-    "lint": "biome check",
+		"lint": "biome check",
 		"prepack": "npm run build"
 	},
 	"jest": {
