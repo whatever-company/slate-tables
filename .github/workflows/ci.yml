@@ -23,6 +23,7 @@ jobs:
       - run: yarn install --frozen-lockfile
         name: Install dependencies
         if: steps.node_modules.outputs.cache-hit != 'true'
+      - run: yarn lint
       - run: yarn test
         name: Run tests
         env:

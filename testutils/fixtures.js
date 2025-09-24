@@ -1,5 +1,5 @@
-import fs from 'fs'
-import { basename, extname, resolve } from 'path'
+import fs from 'node:fs'
+import { basename, extname, resolve } from 'node:path'
 import { KeyUtils } from 'slate'
 
 export default function fixtures(...args) {
@@ -36,7 +36,7 @@ export default function fixtures(...args) {
 				const name = basename(file, extname(file))
 
 				// This needs to be a non-arrow function to use `this.skip()`.
-				it(name, function() {
+				it(name, function () {
 					// Ensure that the key generator is reset. We have to do this here
 					// because the `require` call will create the Slate objects.
 					KeyUtils.resetGenerator()

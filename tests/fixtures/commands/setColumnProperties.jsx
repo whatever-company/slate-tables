@@ -47,7 +47,12 @@ export const value = (
 export const output = (
 	<value>
 		<document>
-			<table columns={[{ witdh: null, example: true }, { witdh: null, second: true }]}>
+			<table
+				columns={[
+					{ witdh: null, example: true },
+					{ witdh: null, second: true }
+				]}
+			>
 				<tr>
 					<td>
 						<paragraph>
