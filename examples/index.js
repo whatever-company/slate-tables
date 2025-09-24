@@ -73,7 +73,7 @@ class TableEditor extends React.Component {
 		return (
 			<React.Fragment>
 				<h1>Examples</h1>
-				{this.editor && this.editor.isInTable() && (
+				{this.editor?.isInTable() && (
 					<div>
 						<Button onClick={() => this.editor.insertColumn()}>Insert column</Button>
 						<Button onClick={() => this.editor.insertRow()}>Insert row</Button>
