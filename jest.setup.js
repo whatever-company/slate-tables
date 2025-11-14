@@ -6,7 +6,7 @@ expect.extend({
 		const receivedDocument = received.toJSON({ preserveSelection: true })
 		const expectedDocument = expected.toJSON({ preserveSelection: true })
 		const pass = isEqual(receivedDocument, expectedDocument)
-		const message = () => `Difference ${pass}:\n${diff(expectedDocument, receivedDocument)}`
+		const message = () => `Difference ${pass}:\n${jdiff.diff(expectedDocument, receivedDocument)}`
 		return { actual: received, message, pass }
 	}
 })
