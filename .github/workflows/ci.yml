@@ -14,7 +14,7 @@ jobs:
         name: Use Node.js 18.x
         with:
           node-version: '18.x'
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         name: Restore node_modules cache
         id: node_modules
         with:
