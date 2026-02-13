@@ -39,7 +39,7 @@
     "standard-version": "9.5.0"
   },
   "scripts": {
-    "test": "NODE_ENV=test jest --roots --roots ./tests",
+    "test": "NODE_ENV=test jest --roots ./tests",
     "start": "parcel examples/index.html",
     "build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
     "release": "standard-version",
