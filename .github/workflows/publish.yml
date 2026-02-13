@@ -8,21 +8,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Install pnpm
+        uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0
+        with:
+          version: 10
+      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 #v6.2.0
         name: Use Node.js 18.x
         with:
           registry-url: 'https://npm.pkg.github.com'
-          node-version: '18.x'
-      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
-        name: Restore node_modules cache
-        id: node_modules
-        with:
-          path: node_modules
-          key: ${{runner.os}}-node_modules-${{ hashFiles('**/yarn.lock') }}
-      - run: yarn install --frozen-lockfile
-        name: Install dependencies
-        if: steps.node_modules.outputs.cache-hit != 'true'
-      - run: yarn test
+          node-version: '18'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - run: pnpm test
         name: Run tests
         env:
           CI: true

@@ -1,97 +1,97 @@
 {
-	"name": "@whatever-company/slate-tables",
-	"version": "1.2.0",
-	"description": "A Slate plugin to handle table edition",
-	"main": "./dist/index.js",
-	"files": [
-		"dist",
-		"lib",
-		"*.md"
-	],
-	"peerDependencies": {
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0",
-		"slate": "^0.47.8",
-		"slate-react": "^0.22.8"
-	},
-	"dependencies": {
-		"is-hotkey": "0.1.6"
-	},
-	"devDependencies": {
-		"@babel/cli": "7.22.5",
-		"@babel/core": "7.22.5",
-		"@babel/preset-env": "7.22.5",
-		"@babel/preset-react": "7.22.5",
-		"@biomejs/biome": "2.2.4",
-		"babel-jest": "29.5.0",
-		"immutable": "4.0.0-rc.12",
-		"jest": "29.2.1",
-		"jest-diff": "29.2.1",
-		"jest-watch-typeahead": "2.2.2",
-		"lodash.isequal": "4.5.0",
-		"parcel-bundler": "1.12.5",
-		"react": "16.14.0",
-		"react-dom": "16.14.0",
-		"react-test-renderer": "16.13.1",
-		"slate": "^0.47.8",
-		"slate-hyperscript": "^0.13.8",
-		"slate-react": "npm:druide-slate-react",
-		"standard-version": "9.5.0"
-	},
-	"scripts": {
-		"test": "NODE_ENV=test jest --roots --roots ./tests",
-		"start": "parcel examples/index.html",
-		"build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
-		"release": "standard-version",
-		"build": "rm -rf ./dist; NODE_ENV=production babel lib --out-dir dist",
-		"lint": "biome check",
-		"prepack": "npm run build"
-	},
-	"jest": {
-		"notify": false,
-		"globals": {
-			"__DEV__": false,
-			"__PROD__": true,
-			"__TEST__": true
-		},
-		"setupFilesAfterEnv": [
-			"<rootDir>/jest.setup.js"
-		],
-		"testPathIgnorePatterns": [
-			"/node_modules/",
-			"/fixtures/"
-		],
-		"moduleFileExtensions": [
-			"js",
-			"jsx",
-			"json"
-		],
-		"moduleDirectories": [
-			"node_modules",
-			"<rootDir>"
-		],
-		"roots": [
-			"<rootDir>"
-		],
-		"testMatch": [
-			"<rootDir>/tests/**/*.js",
-			"<rootDir>/tests/**/*.jsx"
-		],
-		"transform": {
-			"^.+\\.jsx?$": "babel-jest"
-		},
-		"watchPlugins": [
-			"jest-watch-typeahead/filename",
-			"jest-watch-typeahead/testname"
-		]
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-env",
-			"@babel/preset-react"
-		]
-	},
-	"repository": "git@github.com:whatever-company/slate-tables.git",
-	"author": "Elium <info@elium.com>",
-	"license": "MIT"
+  "name": "@whatever-company/slate-tables",
+  "version": "1.2.0",
+  "description": "A Slate plugin to handle table edition",
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "*.md"
+  ],
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "slate": "^0.47.8",
+    "slate-react": "^0.22.8"
+  },
+  "dependencies": {
+    "is-hotkey": "0.1.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.22.5",
+    "@babel/core": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "@babel/preset-react": "7.22.5",
+    "@biomejs/biome": "2.2.4",
+    "babel-jest": "29.5.0",
+    "immutable": "4.0.0-rc.12",
+    "jest": "29.2.1",
+    "jest-diff": "29.2.1",
+    "jest-watch-typeahead": "2.2.2",
+    "lodash.isequal": "4.5.0",
+    "parcel-bundler": "1.12.5",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-test-renderer": "16.13.1",
+    "slate": "^0.47.8",
+    "slate-hyperscript": "^0.13.8",
+    "slate-react": "npm:druide-slate-react",
+    "standard-version": "9.5.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test jest --roots --roots ./tests",
+    "start": "parcel examples/index.html",
+    "build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
+    "release": "standard-version",
+    "build": "rm -rf ./dist; NODE_ENV=production babel lib --out-dir dist",
+    "lint": "biome check",
+    "prepack": "npm run build"
+  },
+  "jest": {
+    "notify": false,
+    "globals": {
+      "__DEV__": false,
+      "__PROD__": true,
+      "__TEST__": true
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/fixtures/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>"
+    ],
+    "roots": [
+      "<rootDir>"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.js",
+      "<rootDir>/tests/**/*.jsx"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "repository": "git@github.com:whatever-company/slate-tables.git",
+  "author": "Elium <info@elium.com>",
+  "license": "MIT"
 }
