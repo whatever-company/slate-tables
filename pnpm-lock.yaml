@@ -13,8 +13,8 @@ importers:
         version: 0.2.0
     devDependencies:
       '@babel/cli':
-        specifier: 7.22.5
-        version: 7.22.5(@babel/core@7.29.0)
+        specifier: 7.28.6
+        version: 7.28.6(@babel/core@7.29.0)
       '@babel/core':
         specifier: 7.29.0
         version: 7.29.0
@@ -72,8 +72,8 @@ importers:
 
 packages:
 
-  '@babel/cli@7.22.5':
-    resolution: {integrity: sha512-N5d7MjzwsQ2wppwjhrsicVDhJSqF9labEP/swYiHhio4Ca2XjEehpgPmerjnLQl7BPE59BLud0PTWGYwqFl/cQ==}
+  '@babel/cli@7.28.6':
+    resolution: {integrity: sha512-6EUNcuBbNkj08Oj4gAZ+BUU8yLCgKzgVX4gaTh09Ya2C8ICM4P+G30g4m3akRxSYAp3A/gnWchrNst7px4/nUQ==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
@@ -1435,12 +1435,12 @@ packages:
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
 
-  commander@4.1.1:
-    resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
-    engines: {node: '>= 6'}
-
   commander@5.1.0:
     resolution: {integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==}
+    engines: {node: '>= 6'}
+
+  commander@6.2.1:
+    resolution: {integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==}
     engines: {node: '>= 6'}
 
   compare-func@2.0.0:
@@ -4627,12 +4627,12 @@ packages:
 
 snapshots:
 
-  '@babel/cli@7.22.5(@babel/core@7.29.0)':
+  '@babel/cli@7.28.6(@babel/core@7.29.0)':
     dependencies:
       '@babel/core': 7.29.0
       '@jridgewell/trace-mapping': 0.3.31
-      commander: 4.1.1
-      convert-source-map: 1.9.0
+      commander: 6.2.1
+      convert-source-map: 2.0.0
       fs-readdir-recursive: 1.1.0
       glob: 7.2.3
       make-dir: 2.1.0
@@ -6382,9 +6382,9 @@ snapshots:
 
   commander@2.20.3: {}
 
-  commander@4.1.1: {}
-
   commander@5.1.0: {}
+
+  commander@6.2.1: {}
 
   compare-func@2.0.0:
     dependencies:
