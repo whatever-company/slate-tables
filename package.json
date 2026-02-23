@@ -22,7 +22,7 @@
     "@babel/core": "7.29.0",
     "@babel/preset-env": "7.29.0",
     "@babel/preset-react": "7.28.5",
-    "@biomejs/biome": "2.4.0",
+    "@biomejs/biome": "2.4.4",
     "babel-jest": "30.2.0",
     "immutable": "4.0.0-rc.12",
     "jest": "30.2.0",
