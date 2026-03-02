@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/whatever-company/slate-tables/compare/v1.2.2...v1.2.3) (2026-03-02)
+
+
+### Bug Fixes
+
+* correct rowspan merge spanning on single cell line ([#272](https://github.com/whatever-company/slate-tables/issues/272)) ([e89490f](https://github.com/whatever-company/slate-tables/commit/e89490f61b7118cf6a7f9fe08c8ff3e94f202d0e))
+* **lint:** correct lint error ([06763eb](https://github.com/whatever-company/slate-tables/commit/06763eb8311abdbe013b14ed839768ee38fb8b53))
+* replace the is inRangeTable detection with is "in wrapped" ([6cf6023](https://github.com/whatever-company/slate-tables/commit/6cf6023a8fd6d0abfde8b861d28e47b54b698a80))
+
 ### [1.2.2](https://github.com/whatever-company/slate-tables/compare/v1.2.1...v1.2.2) (2026-02-13)
 
 ## [1.2.0](https://github.com/whatever-company/slate-tables/compare/v1.1.7...v1.2.0) (2025-09-24)
