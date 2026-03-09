@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/whatever-company/slate-tables/compare/v1.2.3...v1.2.4) (2026-03-09)
+
+
+### Bug Fixes
+
+* remove unused peer dependencies ([fd68adc](https://github.com/whatever-company/slate-tables/commit/fd68adc27ce112c5056516de7f0a96f169beef68))
+
 ### [1.2.3](https://github.com/whatever-company/slate-tables/compare/v1.2.2...v1.2.3) (2026-03-02)
 
 
