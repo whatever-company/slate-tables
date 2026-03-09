@@ -9,10 +9,7 @@
     "*.md"
   ],
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "slate": "^0.47.8",
-    "slate-react": "^0.22.8"
+    "slate": "^0.47.8"
   },
   "dependencies": {
     "is-hotkey": "0.2.0"
