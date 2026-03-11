@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/whatever-company/slate-tables/compare/v1.2.4...v1.2.5) (2026-03-11)
+
+
+### Bug Fixes
+
+* correct cell insertion position in decreaseRowspanAtKey for non-first columns ([821185e](https://github.com/whatever-company/slate-tables/commit/821185e9a8837f2b5918a84cd6292c9936c85c17))
+
 ### [1.2.4](https://github.com/whatever-company/slate-tables/compare/v1.2.3...v1.2.4) (2026-03-09)
 
 
