@@ -8,6 +8,9 @@ export const h = createHyperscript({
 		paragraph: 'paragraph',
 		li: 'li',
 		ul: 'ul'
+	},
+	marks: {
+		color: 'color'
 	}
 })
 
