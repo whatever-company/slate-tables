@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.6](https://github.com/whatever-company/slate-tables/compare/v1.2.5...v1.2.6) (2026-03-18)
+
+
+### Bug Fixes
+
+* improve delete key behavior ([5073f6b](https://github.com/whatever-company/slate-tables/commit/5073f6b205bb2124e83e7a6b95ae1f98f556ebf3))
+
 ### [1.2.5](https://github.com/whatever-company/slate-tables/compare/v1.2.4...v1.2.5) (2026-03-11)
 
 
