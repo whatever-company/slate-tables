@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.7](https://github.com/whatever-company/slate-tables/compare/v1.2.6...v1.2.7) (2026-03-19)
+
+
+### Bug Fixes
+
+* avoid bleeding marks to next cells if they are empty ([162a483](https://github.com/whatever-company/slate-tables/commit/162a483b0eda9b909a829ae25decd039fc51cd2e))
+
 ### [1.2.6](https://github.com/whatever-company/slate-tables/compare/v1.2.5...v1.2.6) (2026-03-18)
 
 
