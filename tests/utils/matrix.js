@@ -6,7 +6,7 @@ const formatMatrix = matrix => {
 	return matrix.map(row => row.map(cell => [cell.virtual, cell.ref.key]))
 }
 
-fixtures(__dirname, './fixtures', ({ module }) => {
+fixtures(import.meta.dirname, './fixtures', ({ module }) => {
 	const { props, value } = module
 	if (!value) {
 		throw new Error('No value defined')

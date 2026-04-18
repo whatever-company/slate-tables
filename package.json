@@ -17,16 +17,8 @@
     "is-hotkey": "0.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.29.0",
-    "@babel/preset-env": "7.29.2",
-    "@babel/preset-react": "7.28.5",
     "@biomejs/biome": "2.4.11",
-    "babel-jest": "30.3.0",
     "immutable": "4.0.0-rc.12",
-    "jest": "30.3.0",
-    "jest-diff": "30.3.0",
-    "jest-watch-typeahead": "3.0.1",
-    "lodash.isequal": "4.5.0",
     "parcel-bundler": "1.12.5",
     "react": "16.14.0",
     "react-dom": "16.14.0",
@@ -34,60 +26,18 @@
     "slate": "^0.47.8",
     "slate-hyperscript": "^0.13.8",
     "slate-react": "npm:druide-slate-react",
-    "standard-version": "9.5.0"
+    "standard-version": "9.5.0",
+    "vitest": "4.1.4"
   },
   "scripts": {
-    "test": "NODE_ENV=test jest --roots ./tests",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "start": "parcel examples/index.html",
     "build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
     "release": "standard-version",
     "lint": "biome check"
   },
-  "jest": {
-    "notify": false,
-    "globals": {
-      "__DEV__": false,
-      "__PROD__": true,
-      "__TEST__": true
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest.setup.js"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/fixtures/"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "<rootDir>"
-    ],
-    "roots": [
-      "<rootDir>"
-    ],
-    "testMatch": [
-      "<rootDir>/tests/**/*.js",
-      "<rootDir>/tests/**/*.jsx"
-    ],
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    },
-    "watchPlugins": [
-      "jest-watch-typeahead/filename",
-      "jest-watch-typeahead/testname"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
-"repository": "git@github.com:whatever-company/slate-tables.git",
+  "repository": "git@github.com:whatever-company/slate-tables.git",
   "author": "Elium <info@elium.com>",
   "license": "MIT"
 }
