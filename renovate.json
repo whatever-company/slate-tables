@@ -5,14 +5,6 @@
 	"prConcurrentLimit": 3,
 	"packageRules": [
 		{
-			"packagePatterns": ["^@babel"],
-			"groupName": "Babel packages"
-		},
-		{
-			"packagePatterns": ["^jest"],
-			"groupName": "Jest packages"
-		},
-		{
 			"packageNames": ["react", "react-dom", "react-test-renderer"],
 			"groupName": "React"
 		},
