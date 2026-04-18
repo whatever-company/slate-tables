@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
           cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --ignore-scripts
       - run: pnpm test
         name: Run tests
         env:

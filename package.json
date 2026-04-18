@@ -87,7 +87,7 @@
       "@babel/preset-react"
     ]
   },
-  "repository": "git@github.com:whatever-company/slate-tables.git",
+"repository": "git@github.com:whatever-company/slate-tables.git",
   "author": "Elium <info@elium.com>",
   "license": "MIT"
 }
