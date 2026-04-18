@@ -2,7 +2,7 @@ import fixtures from 'testutils/fixtures'
 import Plugin from 'lib/index'
 import createSlateEditor from 'testutils/createSlateEditor'
 
-fixtures(__dirname, './fixtures', ({ module }) => {
+fixtures(import.meta.dirname, './fixtures', ({ module }) => {
 	const { props, default: fn, value, output, options } = module
 	if (!value) {
 		throw new Error('No value defined')
