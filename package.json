@@ -19,7 +19,6 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.11",
     "immutable": "4.0.0-rc.12",
-    "parcel-bundler": "1.12.5",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-test-renderer": "16.13.1",
@@ -27,13 +26,14 @@
     "slate-hyperscript": "^0.13.8",
     "slate-react": "npm:druide-slate-react",
     "standard-version": "9.5.0",
+    "vite": "^8.0.8",
     "vitest": "4.1.4"
   },
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "start": "parcel examples/index.html",
-    "build-examples": "rm -rf ./dist-examples;parcel build examples/index.html -d dist-examples --public-url /slate-tables",
+    "start": "vite examples",
+    "build-examples": "vite build examples --outDir ../dist-examples --emptyOutDir",
     "release": "standard-version",
     "lint": "biome check"
   },
