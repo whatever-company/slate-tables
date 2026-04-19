@@ -12,6 +12,5 @@ export default defineConfig({
 			testutils: resolve(__dirname, '..', 'testutils'),
 			lib: resolve(__dirname, '..', 'lib')
 		}
-	},
-	base: '/slate-tables'
+	}
 })

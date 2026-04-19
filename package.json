@@ -33,7 +33,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "start": "vite examples",
-    "build-examples": "vite build examples --outDir ../dist-examples --emptyOutDir",
+    "build-examples": "vite build examples --outDir ../dist-examples --emptyOutDir --base /slate-tables",
     "release": "standard-version",
     "lint": "biome check"
   },

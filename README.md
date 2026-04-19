@@ -8,12 +8,22 @@ Demo: [https://whatever-company.github.io/slate-tables/](https://whatever-compan
 
 ## Install
 
+From GitHub directly:
+
 ```bash
-$ npm login --registry=https://npm.pkg.github.com --scope=@whatever-company
-> Username: USERNAME
-> Password: TOKEN (from your github settings)
-> Email: PUBLIC-EMAIL-ADDRESS
-$ npm install @whatever-company/slate-tables
+pnpm add github:whatever-company/slate-tables
+# or pin a version:
+pnpm add github:whatever-company/slate-tables#v1.3.0
+```
+
+From GitHub Packages registry (you need to be authenticated to install the package, see [this doc](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages)):
+
+```bash
+npm login --registry=https://npm.pkg.github.com --scope=@whatever-company
+# Username: USERNAME
+# Password: TOKEN (from your github settings)
+# Email: PUBLIC-EMAIL-ADDRESS
+pnpm add @whatever-company/slate-tables
 ```
 
 ## Features
@@ -21,8 +31,8 @@ $ npm install @whatever-company/slate-tables
 - Pressing <kbd>Up</kbd>/<kbd>Down</kbd> moves the cursor to the row above/below
 - Pressing <kbd>Left</kbd>/<kbd>Right</kbd> moves the cursor to the cell before/after
 - Pressing <kbd>Enter</kbd> inserts a new row (if enabled)
-- Pressing <kbd>Tab</kbd> moves the cursor to the next cell and creats a new row
-- Pressing <kbd>Shift+Tab</kdb> moves the cursor to the previous cell
+- Pressing <kbd>Tab</kbd> moves the cursor to the next cell and creates a new row if at the end
+- Pressing <kbd>Shift+Tab</kbd> moves the cursor to the previous cell
 
 ### Nested tables
 
@@ -39,7 +49,7 @@ Nothing is done to support copy/paste in this plugin. You have to implement it i
 ## Simple Usage
 
 ```js
-import TablePlugin from '@eliumhq/slate-tables'
+import TablePlugin from '@whatever-company/slate-tables'
 
 const tablePlugin = TablePlugin({
 	saveColumns: false,
@@ -97,6 +107,16 @@ Option object you can pass to the plugin.
 | blocks -> row     | string  | table-row  | Node name for the `<tr />`                                                                                                   |
 | blocks -> cell    | string  | table-cell | Node name for the `<td />`                                                                                                   |
 | blocks -> content | string  | paragraph  | Node name for the default child of a cell                                                                                    |
+
+## Development
+
+```bash
+pnpm install
+pnpm start        # dev server for examples
+pnpm test         # run tests
+pnpm test:watch   # run tests in watch mode
+pnpm lint         # lint with biome
+```
 
 ## `TablePlugin`
 
@@ -196,11 +216,11 @@ Increases the colspan of the cell at `key`.
 
 ### `editor.decreaseRowspanAtKey`
 
-Decreases the rowspan of the cel at `key`.
+Decreases the rowspan of the cell at `key`.
 
 ### `editor.decreaseColspanAtKey`
 
-Decreases the colspan of the cel at `key`.
+Decreases the colspan of the cell at `key`.
 
 ## Queries
 
