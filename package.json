@@ -3,6 +3,7 @@
   "version": "1.3.0",
   "description": "A Slate plugin to handle table edition",
   "type": "module",
+  "sideEffects": false,
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
