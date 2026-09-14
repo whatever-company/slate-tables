@@ -15,9 +15,7 @@ export const value = (
 						<paragraph>Cell 1,1</paragraph>
 					</td>
 					<td>
-						<paragraph>
-							<text>Cell 1,2</text>
-						</paragraph>
+						<paragraph>Cell 1,2</paragraph>
 					</td>
 					<td>
 						<paragraph>Cell 1,3</paragraph>
@@ -27,29 +25,13 @@ export const value = (
 					<td>
 						<paragraph>Cell 2,1</paragraph>
 					</td>
-					<td>
+					<td colspan={2}>
 						<paragraph>
 							<text>
 								Cell 2,2
 								<cursor />
 							</text>
 						</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 2,3</paragraph>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<paragraph>Cell 3,1</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text>Cell 3,2</text>
-						</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 3,3</paragraph>
 					</td>
 				</tr>
 			</table>
@@ -72,19 +54,19 @@ export const output = (
 						<paragraph>Cell 1,2</paragraph>
 					</td>
 					<td>
+						<paragraph>Cell 1,3</paragraph>
+					</td>
+					<td>
 						<paragraph>
 							<text />
 						</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 1,3</paragraph>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<paragraph>Cell 2,1</paragraph>
 					</td>
-					<td>
+					<td colspan={2}>
 						<paragraph>Cell 2,2</paragraph>
 					</td>
 					<td>
@@ -93,27 +75,6 @@ export const output = (
 								<cursor />
 							</text>
 						</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 2,3</paragraph>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<paragraph>Cell 3,1</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text>Cell 3,2</text>
-						</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text />
-						</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 3,3</paragraph>
 					</td>
 				</tr>
 			</table>
