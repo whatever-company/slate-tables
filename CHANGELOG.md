@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/whatever-company/slate-tables/compare/v1.3.0...v1.3.1) (2026-09-14)
+
+
+### Bug Fixes
+
+* correct build dependencies in pnpm-workspace.yaml ([64d3a87](https://github.com/whatever-company/slate-tables/commit/64d3a8711bee088b5d3321205bc14640cebd760b))
+* crash and lost cursor after deleteRow and insertColumn in edge ([eb2bfa1](https://github.com/whatever-company/slate-tables/commit/eb2bfa1c16db3c84a69faa69a3870383895bba16))
+
 ## [1.3.0](https://github.com/whatever-company/slate-tables/compare/v1.2.7...v1.3.0) (2026-03-19)
 
 ### [1.2.7](https://github.com/whatever-company/slate-tables/compare/v1.2.6...v1.2.7) (2026-03-19)
