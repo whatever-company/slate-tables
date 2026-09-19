@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		// The declarations are the subject of this pass, so they must not be skipped.
+		// Nothing here reaches into a dependency's own types, unlike the JS sources.
+		"skipLibCheck": false,
+		"allowJs": false
+	},
+	"include": ["lib/**/*.d.ts"]
+}

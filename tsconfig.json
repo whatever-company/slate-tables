@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"strict": true,
+		"target": "es2022",
+		"lib": ["es2022", "dom"],
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		// `immutable@4.0.0-rc.12` ships declarations that no longer parse. Our own are
+		// checked by `tsconfig.declarations.json`, and exercised by `tests/types`.
+		"skipLibCheck": true,
+		// The plugin is plain ESM: types are hand-written next to the JS they describe
+		"allowJs": true,
+		"checkJs": false
+	},
+	"include": ["lib/**/*.d.ts", "tests/types"]
+}
