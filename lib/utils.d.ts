@@ -19,6 +19,7 @@ export class Table {
 	getCellAbove(): any
 	getCellBelow(): any
 	getCellCoordinates(cell: any): any
+	getCellInsertIndex(rowIndex: number, column: number): number
 	isInCell(): boolean
 	isInRow(): boolean
 	isInTable(): boolean
