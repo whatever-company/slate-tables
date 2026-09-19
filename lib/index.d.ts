@@ -1,66 +1,128 @@
-import type { KeyboardEvent } from 'react'
+import type { KeyboardEvent, SyntheticEvent } from 'react'
+import type { NodeKey, SlateEditor, SlateNode, SlateRange, SlateSchema, Table, TableBlocks } from './utils.js'
+
+export type {
+	Coordinates,
+	MatrixCell,
+	NodeKey,
+	SlateEditor,
+	SlateNode,
+	SlateRange,
+	SlateSchema,
+	SlateValue,
+	Table,
+	TableBlocks
+} from './utils.js'
+
+/** Attributes stored on a cell node. */
+export interface CellProperties {
+	colspan?: number
+	rowspan?: number
+	[property: string]: unknown
+}
+
+/** Attributes of a single column, stored on the table node under `columns`. */
+export interface ColumnProperties {
+	width?: number | null
+	[property: string]: unknown
+}
+
+/** Attributes stored on a table node. */
+export interface TableProperties {
+	columns?: ColumnProperties[]
+	[property: string]: unknown
+}
 
 export interface TablePluginOptions {
-	blocks?: {
-		table?: string
-		row?: string
-		cell?: string
-		content?: string
-	}
+	/** Node types the plugin reads and writes. Those left out keep their default. */
+	blocks?: Partial<TableBlocks>
+	/** Whether <kbd>Enter</kbd> inserts a row instead of a paragraph in the cell */
 	enterCreatesRow?: boolean
+	/** Whether column widths are kept on the table node, under `columns` */
 	saveColumns?: boolean
 }
 
-export interface TablePluginCommands {
-	insertTable(editor: any): void
-	insertTableAtRange(editor: any, range: any): void
-	insertColumn(editor: any): void
-	insertColumnAtKey(editor: any, key: string): void
-	deleteColumn(editor: any): void
-	deleteColumnAtKey(editor: any, key: string): void
-	insertRow(editor: any): void
-	insertRowAtEnd(editor: any): void
-	insertRowAtKey(editor: any, key: string, atIndex?: number): void
-	deleteRowAtKey(editor: any, key: string): void
-	deleteRow(editor: any): void
-	deleteTable(editor: any): void
-	deleteTableAtKey(editor: any, key: string): void
-	deleteCellsContentAtRange(editor: any, range: any): void
-	increaseColspanAtKey(editor: any, key: string): void
-	increaseRowspanAtKey(editor: any, key: string): void
-	decreaseColspanAtKey(editor: any, key: string): void
-	decreaseRowspanAtKey(editor: any, key: string): void
-	setCellProperties(editor: any, properties: any): void
-	setCellPropertiesAtKey(editor: any, key: string, properties: any): void
-	setColumnProperties(editor: any, properties: any): void
-	setColumnPropertiesAtIndex(editor: any, index: number, properties: any): void
-	setTableProperties(editor: any, properties: any): void
-	setTablePropertiesAtKey(editor: any, key: string, properties: any): void
+/** Options once the defaults have been filled in. */
+export interface ResolvedTablePluginOptions {
+	blocks: TableBlocks
+	enterCreatesRow: boolean
+	saveColumns: boolean
 }
 
-export interface TablePluginQueries {
-	isInTable(editor: any): boolean
-	isRangeInTable(editor: any, range: any): boolean
-	getTableAtKey(editor: any, key: string): any
-	getCellAtKey(editor: any, key: string): any
-	getRowAtKey(editor: any, key: string): any
-	canIncreaseColspanAtKey(editor: any, key: string): boolean
-	canIncreaseRowspanAtKey(editor: any, key: string): boolean
-	canDecreaseColspanAtKey(editor: any, key: string): boolean
-	canDecreaseRowspanAtKey(editor: any, key: string): boolean
-	getColumnPropertiesAtKey(editor: any, key: string): any
+/** Commands the plugin installs on the editor. */
+export interface TableCommands {
+	insertTable(): void
+	insertTableAtRange(range: SlateRange): void
+	insertColumn(): void
+	insertColumnAtKey(key: NodeKey): void
+	deleteColumn(): void
+	deleteColumnAtKey(key: NodeKey): void
+	insertRow(): void
+	insertRowAtEnd(): void
+	insertRowAtKey(key: NodeKey, atIndex?: number): void
+	deleteRow(): void
+	deleteRowAtKey(key: NodeKey): void
+	deleteTable(): void
+	deleteTableAtKey(key: NodeKey): void
+	deleteCellsContentAtRange(range: SlateRange): void
+	increaseColspanAtKey(key: NodeKey): void
+	increaseRowspanAtKey(key: NodeKey): void
+	decreaseColspanAtKey(key: NodeKey): void
+	decreaseRowspanAtKey(key: NodeKey): void
+	setCellProperties(properties: CellProperties): void
+	setCellPropertiesAtKey(key: NodeKey, properties: CellProperties): void
+	setColumnProperties(properties: ColumnProperties): void
+	setColumnPropertiesAtIndex(tableKey: NodeKey, index: number, properties: ColumnProperties): void
+	setTableProperties(properties: TableProperties): void
+	setTablePropertiesAtKey(key: NodeKey, properties: TableProperties): void
 }
+
+/** Queries the plugin installs on the editor. */
+export interface TableQueries {
+	/** Whether the current selection is held by a single table */
+	isInTable(): boolean
+	isInTableAtKey(key: NodeKey): boolean
+	/** Whether both ends of the range are held by the same table */
+	isRangeInTable(range: SlateRange): boolean
+	/** Throws when `key` is outside of a table */
+	getTableAtKey(key: NodeKey): Table
+	getCellAtKey(key: NodeKey): SlateNode | null
+	getRowAtKey(key: NodeKey): SlateNode | null
+	canIncreaseColspanAtKey(key: NodeKey): boolean
+	canIncreaseRowspanAtKey(key: NodeKey): boolean
+	canDecreaseColspanAtKey(key: NodeKey): boolean
+	canDecreaseRowspanAtKey(key: NodeKey): boolean
+	/** `null` when the table has no `columns` data, `undefined` past the last column */
+	getColumnPropertiesAtKey(key: NodeKey): ColumnProperties | null | undefined
+}
+
+/**
+ * The plugin's additions to the editor. Intersect it with your own editor type:
+ * `type MyEditor = Editor & TableEditor`
+ */
+export interface TableEditor extends TableCommands, TableQueries {}
+
+/** Slate passes the editor as the first argument of every command and query. */
+type WithEditor<T> = {
+	[K in keyof T]: T[K] extends (...args: infer A) => infer R ? (editor: SlateEditor, ...args: A) => R : never
+}
+
+export type TablePluginCommands = WithEditor<TableCommands>
+export type TablePluginQueries = WithEditor<TableQueries>
 
 export interface TablePluginInstance {
-	options: Required<TablePluginOptions>
+	/** Not set by the factory; Slate reads it when the consumer names the plugin */
+	name?: string
+	options: ResolvedTablePluginOptions
 	commands: TablePluginCommands
 	queries: TablePluginQueries
-	schema: any
-	normalizeNode: any
-	onKeyDown(event: KeyboardEvent, editor: any, next: () => any): any
-	name?: string
+	schema: SlateSchema
+	/** Returns the normalizer to run, or nothing when the node is already valid */
+	normalizeNode(node: SlateNode, editor: SlateEditor, next: () => unknown): (() => void) | unknown
+	onSelect(event: SyntheticEvent, editor: SlateEditor, next: () => unknown): unknown
+	onKeyDown(event: KeyboardEvent, editor: SlateEditor, next: () => unknown): unknown
 }
 
-export declare const defaultOptions: Required<TablePluginOptions>
+export declare const defaultOptions: ResolvedTablePluginOptions
 
 export default function TablePlugin(options?: TablePluginOptions): TablePluginInstance
