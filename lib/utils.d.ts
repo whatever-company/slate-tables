@@ -36,6 +36,8 @@ export function createTableNode(options: BlockOptions, rowsCount?: number, colum
 export function getClosestTable(options: BlockOptions, document: SlateNode, key: NodeKey): SlateNode | null
 export function getCellColspan(cell: SlateNode): number
 export function getCellRowspan(cell: SlateNode): number
+/** Set each of `properties` on a node's `data` map, without deep conversion of the values */
+export function mergeNodeData(data: SlateNode, properties: Record<string, unknown>): SlateNode
 
 /** Position of a cell in the table matrix. */
 export interface Coordinates {
@@ -68,13 +70,13 @@ export class Table {
 	readonly prevCell: SlateNode | null | undefined
 	/** Falsy on the last cell of the table */
 	readonly nextCell: SlateNode | null | undefined
-	/** `Immutable.List<Immutable.List<MatrixCell>>`, indexed by row then column */
-	readonly matrix: any
+	/** Grid of the cells, indexed by row then column */
+	readonly matrix: MatrixCell[][]
 
 	getCellAbove(): SlateNode | null | undefined
 	getCellBelow(): SlateNode | null | undefined
-	/** `Immutable.List<Coordinates>` of every slot the cell occupies */
-	getCellCoordinates(cell: SlateNode): any
+	/** Every slot the cell occupies, in row order */
+	getCellCoordinates(cell: SlateNode): Coordinates[]
 	getCellInsertIndex(rowIndex: number, column: number): number
 	isInCell(): boolean
 	isInRow(): boolean
