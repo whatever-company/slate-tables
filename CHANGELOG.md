@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/whatever-company/slate-tables/compare/v1.3.1...v1.3.2) (2026-09-22)
+
+
+### Bug Fixes
+
+* correct colspan remove ([389a1df](https://github.com/whatever-company/slate-tables/commit/389a1df1a37746a703c696715fdabb39810eafa3))
+* correct normalisation of broken state ([05554b1](https://github.com/whatever-company/slate-tables/commit/05554b1dce9b3beb0c166d0ded3c86dbbc321269))
+* prevent error deleting last column ([aa265df](https://github.com/whatever-company/slate-tables/commit/aa265df3e78f73bb18c07c899c9e78923737dac2))
+
 ### [1.3.1](https://github.com/whatever-company/slate-tables/compare/v1.3.0...v1.3.1) (2026-09-14)
 
 
