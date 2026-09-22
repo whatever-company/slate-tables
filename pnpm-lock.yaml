@@ -18,9 +18,6 @@ importers:
       '@types/react':
         specifier: ^16.14.70
         version: 16.14.70
-      immutable:
-        specifier: 4.0.0-rc.12
-        version: 4.0.0-rc.12
       react:
         specifier: 16.14.0
         version: 16.14.0
@@ -32,13 +29,13 @@ importers:
         version: 16.13.1(react@16.14.0)
       slate:
         specifier: ^0.47.8
-        version: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
+        version: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
       slate-hyperscript:
         specifier: ^0.13.8
-        version: 0.13.9(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))
+        version: 0.13.9(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))
       slate-react:
         specifier: npm:druide-slate-react
-        version: druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@4.0.0-rc.12)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))(supports-color@5.5.0)
+        version: druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@5.1.9)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))(supports-color@5.5.0)
       standard-version:
         specifier: 9.5.0
         version: 9.5.0
@@ -931,8 +928,8 @@ packages:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
 
-  immutable@4.0.0-rc.12:
-    resolution: {integrity: sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A==}
+  immutable@5.1.9:
+    resolution: {integrity: sha512-m8nVez3rwrgmWxtLMt1ZYXB2Lv7OKYn/disyxAlSDYAlKSlFoPPfIAmAM/M5xqL4m4C/wAPw7S2/CNaUii1Hxg==}
 
   indent-string@4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
@@ -2482,26 +2479,26 @@ snapshots:
       find-up: 3.0.0
       minimatch: 3.1.2
 
-  druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@4.0.0-rc.12)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))(supports-color@5.5.0):
+  druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@5.1.9)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))(supports-color@5.5.0):
     dependencies:
       debug: 3.2.7(supports-color@5.5.0)
       get-window: 1.1.2
-      immutable: 4.0.0-rc.12
+      immutable: 5.1.9
       is-window: 1.0.2
       lodash: 4.17.23
       memoize-one: 4.0.3
       prop-types: 15.8.1
       react: 16.14.0
       react-dom: 16.14.0(react@16.14.0)
-      react-immutable-proptypes: 2.2.0(immutable@4.0.0-rc.12)
+      react-immutable-proptypes: 2.2.0(immutable@5.1.9)
       selection-is-backward: 1.0.0
-      slate: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
-      slate-base64-serializer: 0.2.115(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))
+      slate: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
+      slate-base64-serializer: 0.2.115(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))
       slate-dev-environment: 0.2.5
       slate-hotkeys: 0.2.11
-      slate-plain-serializer: 0.7.13(immutable@4.0.0-rc.12)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))
-      slate-prop-types: 0.5.44(immutable@4.0.0-rc.12)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))
-      slate-react-placeholder: 0.2.9(druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@4.0.0-rc.12)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))(supports-color@5.5.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))
+      slate-plain-serializer: 0.7.13(immutable@5.1.9)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))
+      slate-prop-types: 0.5.44(immutable@5.1.9)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))
+      slate-react-placeholder: 0.2.9(druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@5.1.9)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))(supports-color@5.5.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))
       tiny-invariant: 1.3.3
       tiny-warning: 0.0.3
     transitivePeerDependencies:
@@ -2702,7 +2699,7 @@ snapshots:
       safer-buffer: 2.1.2
     optional: true
 
-  immutable@4.0.0-rc.12: {}
+  immutable@5.1.9: {}
 
   indent-string@4.0.0: {}
 
@@ -3114,9 +3111,9 @@ snapshots:
       react: 16.14.0
       scheduler: 0.19.1
 
-  react-immutable-proptypes@2.2.0(immutable@4.0.0-rc.12):
+  react-immutable-proptypes@2.2.0(immutable@5.1.9):
     dependencies:
-      immutable: 4.0.0-rc.12
+      immutable: 5.1.9
       invariant: 2.2.4
 
   react-is@16.13.1: {}
@@ -3274,10 +3271,10 @@ snapshots:
 
   siginfo@2.0.0: {}
 
-  slate-base64-serializer@0.2.115(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)):
+  slate-base64-serializer@0.2.115(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0)):
     dependencies:
       isomorphic-base64: 1.0.2
-      slate: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
+      slate: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
 
   slate-dev-environment@0.2.5:
     dependencies:
@@ -3288,33 +3285,33 @@ snapshots:
       is-hotkey: 0.1.4
       slate-dev-environment: 0.2.5
 
-  slate-hyperscript@0.13.9(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)):
+  slate-hyperscript@0.13.9(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0)):
     dependencies:
       is-plain-object: 2.0.4
-      slate: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
+      slate: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
 
-  slate-plain-serializer@0.7.13(immutable@4.0.0-rc.12)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)):
+  slate-plain-serializer@0.7.13(immutable@5.1.9)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0)):
     dependencies:
-      immutable: 4.0.0-rc.12
-      slate: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
+      immutable: 5.1.9
+      slate: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
 
-  slate-prop-types@0.5.44(immutable@4.0.0-rc.12)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)):
+  slate-prop-types@0.5.44(immutable@5.1.9)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0)):
     dependencies:
-      immutable: 4.0.0-rc.12
-      slate: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
+      immutable: 5.1.9
+      slate: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
 
-  slate-react-placeholder@0.2.9(druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@4.0.0-rc.12)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))(supports-color@5.5.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)):
+  slate-react-placeholder@0.2.9(druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@5.1.9)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))(supports-color@5.5.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0)):
     dependencies:
       react: 16.14.0
-      slate: 0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0)
-      slate-react: druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@4.0.0-rc.12)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0))(supports-color@5.5.0)
+      slate: 0.47.9(immutable@5.1.9)(supports-color@5.5.0)
+      slate-react: druide-slate-react@0.22.9-rc.22(druide-slate-react@0.22.9-rc.22)(immutable@5.1.9)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0))(supports-color@5.5.0)
 
-  slate@0.47.9(immutable@4.0.0-rc.12)(supports-color@5.5.0):
+  slate@0.47.9(immutable@5.1.9)(supports-color@5.5.0):
     dependencies:
       debug: 3.2.7(supports-color@5.5.0)
       direction: 0.1.5
       esrever: 0.2.0
-      immutable: 4.0.0-rc.12
+      immutable: 5.1.9
       is-plain-object: 2.0.4
       lodash: 4.17.23
       tiny-invariant: 1.3.3
