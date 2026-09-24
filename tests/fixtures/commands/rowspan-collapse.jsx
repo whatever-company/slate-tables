@@ -2,6 +2,10 @@
 
 import { h } from 'testutils/hyperscript'
 
+/**
+ * Cell 2,2 is the only cell of its row: merging it into Cell 1,2 removes the row,
+ * keeps its content, and shrinks Cell 1,1 which spanned over it.
+ */
 export default editor => {
 	editor.increaseRowspanAtKey('cursor')
 }
@@ -44,15 +48,14 @@ export const output = (
 		<document>
 			<table>
 				<tr>
-					<td rowspan={1}>
+					<td>
 						<paragraph>Cell 1,1</paragraph>
 					</td>
-					<td rowspan={1} key="cursor">
+					<td key="cursor">
+						<paragraph>Cell 1,2</paragraph>
 						<paragraph>
-							<text>
-								Cell 1,2
-								<cursor />
-							</text>
+							Cell 2,2
+							<cursor />
 						</paragraph>
 					</td>
 				</tr>
