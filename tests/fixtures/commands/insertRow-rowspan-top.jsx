@@ -2,6 +2,7 @@
 
 import { h } from 'testutils/hyperscript'
 
+/** The row is inserted inside the rows spanned by Cell 2,2, which grows to cover it */
 export default editor => {
 	editor.insertRowAtKey(editor.value.selection.start.key)
 }
@@ -76,7 +77,7 @@ export const output = (
 					<td>
 						<paragraph>Cell 2,1</paragraph>
 					</td>
-					<td rowspan={2}>
+					<td rowspan={3}>
 						<paragraph>Cell 2,2</paragraph>
 					</td>
 
@@ -104,11 +105,6 @@ export const output = (
 					</td>
 					<td>
 						<paragraph>Cell 3,3</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text />
-						</paragraph>
 					</td>
 				</tr>
 			</table>

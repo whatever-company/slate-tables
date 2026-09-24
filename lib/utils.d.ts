@@ -36,6 +36,8 @@ export function createTableNode(options: BlockOptions, rowsCount?: number, colum
 export function getClosestTable(options: BlockOptions, document: SlateNode, key: NodeKey): SlateNode | null
 export function getCellColspan(cell: SlateNode): number
 export function getCellRowspan(cell: SlateNode): number
+/** Cell data with the span set, the key being dropped for the default of 1 */
+export function withSpan(data: SlateNode['data'], span: 'colspan' | 'rowspan', value: number): SlateNode['data']
 /** Set each of `properties` on a node's `data` map, without deep conversion of the values */
 export function mergeNodeData(data: SlateNode, properties: Record<string, unknown>): SlateNode
 
