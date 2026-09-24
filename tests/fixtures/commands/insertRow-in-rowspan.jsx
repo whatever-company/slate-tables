@@ -2,8 +2,24 @@
 
 import { h } from 'testutils/hyperscript'
 
+/**
+ * The new row goes below B1, inside the rows spanned by C. C must grow by one row
+ * and the new row only gets a cell for the column C does not cover. Without that
+ * C kept spanning two rows, the last row was left short, and the normalizer
+ * appended an empty cell after B2 instead of under C.
+ *
+ *   ┌───┬────┐              ┌───┬────┐
+ *   │ A │ B0 │              │ A │ B0 │
+ *   ├───┼────┤              ├───┼────┤
+ *   │ C │ B1 │ insert row   │ C │ B1 │
+ *   │   ├────┤     →        │   ├────┤
+ *   │   │ B2 │              │   │    │
+ *   └───┴────┘              │   ├────┤
+ *                           │   │ B2 │
+ *                           └───┴────┘
+ */
 export default editor => {
-	editor.insertRowAtKey(editor.value.selection.start.key)
+	editor.insertRow()
 }
 
 export const value = (
@@ -12,45 +28,31 @@ export const value = (
 			<table>
 				<tr>
 					<td>
-						<paragraph>Cell 1,1</paragraph>
+						<paragraph>A</paragraph>
 					</td>
 					<td>
-						<paragraph>Cell 1,2</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text>Cell 1,3</text>
-						</paragraph>
+						<paragraph>B0</paragraph>
 					</td>
 				</tr>
 				<tr>
-					<td>
-						<paragraph>Cell 2,1</paragraph>
-					</td>
 					<td rowspan={2}>
+						<paragraph>C</paragraph>
+					</td>
+					<td>
 						<paragraph>
 							<text>
 								<cursor />
-								Cell 2,2
+								B1
 							</text>
 						</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 2,3</paragraph>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<paragraph>Cell 3,1</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 3,3</paragraph>
+						<paragraph>B2</paragraph>
 					</td>
 				</tr>
 			</table>
-			<paragraph>
-				<text />
-			</paragraph>
 		</document>
 	</value>
 )
@@ -61,25 +63,18 @@ export const output = (
 			<table>
 				<tr>
 					<td>
-						<paragraph>Cell 1,1</paragraph>
+						<paragraph>A</paragraph>
 					</td>
 					<td>
-						<paragraph>Cell 1,2</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 1,3</paragraph>
+						<paragraph>B0</paragraph>
 					</td>
 				</tr>
 				<tr>
-					<td>
-						<paragraph>Cell 2,1</paragraph>
+					<td rowspan={3}>
+						<paragraph>C</paragraph>
 					</td>
-					<td rowspan={2}>
-						<paragraph>Cell 2,2</paragraph>
-					</td>
-
 					<td>
-						<paragraph>Cell 2,3</paragraph>
+						<paragraph>B1</paragraph>
 					</td>
 				</tr>
 				<tr>
@@ -90,29 +85,13 @@ export const output = (
 							</text>
 						</paragraph>
 					</td>
-					<td>
-						<paragraph>
-							<text />
-						</paragraph>
-					</td>
 				</tr>
 				<tr>
 					<td>
-						<paragraph>Cell 3,1</paragraph>
-					</td>
-					<td>
-						<paragraph>Cell 3,3</paragraph>
-					</td>
-					<td>
-						<paragraph>
-							<text />
-						</paragraph>
+						<paragraph>B2</paragraph>
 					</td>
 				</tr>
 			</table>
-			<paragraph>
-				<text />
-			</paragraph>
 		</document>
 	</value>
 )
